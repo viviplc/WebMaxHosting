@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">WebymaxhostingApp</string>
+    <string name="AppTitle">Webymax Hosting</string>
+    <string name="TxtName">Customer Name</string>
+    <string name="txPHName">Provide Customer Name</string>
+    <string name="TxtHostingPlan">Hosting Plan Type</string>
+    <string name="PlanGrowBig">Grow Big</string>
+    <string name="PlanGrowGeek">Grow Geek</string>
+    <string name="TxtHostingFeatures">Features</string>
+    <string name="TxtAdditional">Additional Services</string>
+    <string name="ChkUnlimited">Unlimited Websites</string>
+    <string name="ChkStaging">Staging</string>
+    <string name="TxtWebSpace">Webspace Size</string>
+    <string name="TxtCountry">Country</string>
+    <string name="TxtRegistration">Registration Date</string>
+    <string name="HintDate">Select Registration Date</string>
+    <string name="btnCalculate">Calculate</string>
+
+    <string name="featureStaging">Staging + git</string>
+    <string name="featurePriority">Priority Support</string>
+    <string name="featureBackup">On-demand backup</string>
+    <string name="featureUltrafast">Ultrafast PHP</string>
+</resources>

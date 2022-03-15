@@ -1,0 +1,56 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.WebymaxhostingApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/dark_grey</item>
+        <item name="colorPrimaryVariant">@color/dark_grey</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/cian</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="titleLayout">
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="titleText">
+        <item name="android:textSize">100px</item>
+        <item name="android:textColor">@color/purple</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginStart">20px</item>
+        <item name="android:layout_marginEnd">20px</item>
+        <item name="android:layout_marginTop">20px</item>
+        <item name="android:layout_marginBottom">30px</item>
+    </style>
+    <style name="titleIcon">
+        <item name="android:layout_marginStart">20px</item>
+        <item name="android:layout_marginEnd">20px</item>
+        <item name="android:layout_marginTop">20px</item>
+        <item name="android:layout_marginBottom">15px</item>
+    </style>
+    <style name="formRow">
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_marginStart">40px</item>
+        <item name="android:layout_marginEnd">40px</item>
+        <item name="android:layout_marginTop">20px</item>
+        <item name="android:layout_marginBottom">20px</item>
+    </style>
+    <style name="label">
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="android:textSize">60px</item>
+    </style>
+    <style name="checkbox">
+        <item name="android:layout_marginTop">10px</item>
+    </style>
+    <style name="button">
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:backgroundTint">@color/cian</item>
+        <item name="android:textSize">80px</item>
+        <item name="android:layout_marginEnd">30px</item>
+        <item name="android:layout_marginStart">30px</item>
+    </style>
+
+</resources>

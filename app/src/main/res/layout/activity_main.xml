@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/white">>
+
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        style="@style/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/AppTitle"
+            style="@style/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/AppTitle"/>
+
+        <!-- Image source: <a href="https://www.flaticon.com/free-icons/data" title="data icons">Data icons created by Freepik - Flaticon</a> -->
+        <ImageView
+            android:id="@+id/imageView"
+            style="@style/titleIcon"
+            android:layout_width="128px"
+            android:layout_height="128px"
+            app:srcCompat="@drawable/webhosting" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FormRow"
+        style="@style/formRow"
+        android:layout_below="@id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TxtName"
+            style="@style/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/TxtName" />
+
+        <EditText
+            android:id="@+id/EdTxtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:hint="@string/txPHName"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FormRow2"
+        style="@style/formRow"
+        android:layout_below="@id/FormRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TxtHostingPlan"
+            style="@style/label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/TxtHostingPlan" />
+
+        <RadioGroup
+            android:id="@+id/RadioHostingPlan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioBig"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/PlanGrowBig" />
+            <RadioButton
+                android:id="@+id/radioGeek"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/PlanGrowGeek" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/TxtHostingFeatures"
+            style="@style/label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/TxtHostingFeatures"/>
+
+        <RadioGroup
+            android:id="@+id/RadioHostingFeatures"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <RadioButton
+                android:id="@+id/radioOption1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Option1" />
+            <RadioButton
+                android:id="@+id/radioOption2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Option2" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FormRow3"
+        style="@style/formRow"
+        android:layout_below="@id/FormRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TxtAdditional"
+            style="@style/label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/TxtAdditional" />
+
+        <CheckBox
+            android:id="@+id/checkStaging"
+            style="@style/checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:text="@string/ChkStaging" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FormRow4"
+        style="@style/formRow"
+        android:layout_below="@id/FormRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TxtWebSpace"
+            style="@style/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/TxtWebSpace" />
+
+        <Spinner
+            android:id="@+id/spnWebSpace"
+            android:layout_width="500px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FormRow5"
+        style="@style/formRow"
+        android:layout_below="@id/FormRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TxtCountry"
+            style="@style/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/TxtCountry" />
+
+        <AutoCompleteTextView
+            android:id="@+id/AutoTxtCountry"
+            android:layout_width="500px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:completionThreshold="2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FormRow6"
+        style="@style/formRow"
+        android:layout_below="@id/FormRow5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TxtRegistration"
+            style="@style/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/TxtRegistration" />
+
+        <EditText
+            android:id="@+id/TxtDateRegistration"
+            android:layout_width="500px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="date"
+            android:hint="@string/HintDate"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        style="@style/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/FormRow6"
+        android:text="@string/btnCalculate" />
+
+</LinearLayout>
